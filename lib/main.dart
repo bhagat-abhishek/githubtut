@@ -81,10 +81,18 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             ElevatedButton(
-                onPressed: () {
-                  print('Hi');
-                },
-                child: Text('Sample button')),
+              onPressed: () {
+                print('Hi');
+              },
+              child: Text('Sample button'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                print('Why');
+                print('...Load');
+              },
+              child: Text('Why'),
+            ),
           ],
         ),
       ),
