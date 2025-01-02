@@ -78,13 +78,20 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              'You have it',
             ),
             ElevatedButton(
-                onPressed: () {
-                  print('Hi');
-                },
-                child: Text('Sample button')),
+              onPressed: () {
+                print('Hi');
+              },
+              child: Text('Sample button'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                print('cleand');
+              },
+              child: Text('Clean'),
+            ),
           ],
         ),
       ),
