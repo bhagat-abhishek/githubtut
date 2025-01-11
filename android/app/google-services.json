@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "291926874349",
+    "project_id": "hos-alpha",
+    "storage_bucket": "hos-alpha.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291926874349:android:0da7de3023b62302e814e4",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKKjxlEs0Xg5wB4ds4T_UmtNNvD1hEYIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

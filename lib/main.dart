@@ -1,6 +1,13 @@
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -81,8 +88,19 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have it',
             ),
             ElevatedButton(
-              onPressed: () {
+              onPressed: () async {
                 print('Hi');
+                await FirebaseAnalytics.instance.logBeginCheckout(
+                    value: 10.0,
+                    currency: 'USD',
+                    items: [
+                      AnalyticsEventItem(
+                        itemName: 'Socks',
+                        itemId: 'xjw73ndnw',
+                        price: 10.0,
+                      ),
+                    ],
+                    coupon: '10PERCENTOFF');
               },
               child: Text('Sample button'),
             ),
